@@ -1,0 +1,70 @@
+Intro to Programming with Python
+
+Programming - Programming means writing the instructions to create a software.
+Software - Software is a set of instructions to the hardware.
+Code - The instructions that we write to create software is called Code.
+Syntax - Similar to Grammar rules in English, Hindi, each programming language has a unique set of rules. These rules are called the Syntax of a Programming Language.
+
+Why Python? 
+Python is an easy to learn, powerful programming language. With Python, it is possible to create programs with minimal amount of code. Look at the code in Java and Python used for printing the message 'Hello World'
+
+Applications of Python: 
+Python is a versatile language which has applications in almost every field
+Artificial intelligence (AI)
+Machine Learning (ML)
+Big Data
+Smart Devices/Internet of Things (IoT)
+Cyber Security
+Game Development
+Backend Development, etc.
+
+Career Opportunities:
+Python developers have plenty of opportunities across the world
+DevOps Engineer
+Software Developer
+Data Analyst
+Data Scientist
+Machine Learning (ML) Engineer
+AI Scientist, etc.
+
+
+** Steps to download and install Python:
+
+Open your web browser and go to the official Python website at https://www.python.org/downloads/.
+Click on the Download Python button for the latest stable version suitable for your operating system.
+Once the installer file is downloaded, open it to start the installation process.
+On the first installation screen, check the box that says Add Python to PATH.
+Click Install Now and wait for the installation to complete.
+When the installation finishes, click Close to exit the installer.
+To verify the installation, open the Command Prompt (Windows) type python --version.
+
+
+** Steps to download VSCode Windows installer:
+
+Download the Visual Studio Code [https://code.visualstudio.com/docs?dv=win] User setup for Windows.
+Run the installer with administrator permissions, VSCodeUserSetup-{version}.exe.
+By default, the User setup installs VS Code under C:\Users\{Username}\AppData\Local\Programs\Microsoft VS Code.
+
+After you install VS Code, finish setup for your development workflow:
+Install additional components, including Git, Node.js, TypeScript, language runtimes, and command-line tools.
+Install extensions from the Visual Studio Marketplace to add themes, formatters, debuggers, and language support.
+Set up GitHub Copilot to use AI features in VS Code.
+Start the VS Code tutorial for a hands-on tour of the user interface and key features.
+
+** Steps to download Jupyter Notebook:
+
+Check if Python is Installed:  python --version
+Install Pip (Python Package Manager): pip --version
+To install pip: python -m ensurepip --default-pip
+Installing Jupyter Notebook: pip install notebook
+Verify the installation: jupyter notebook --version
+After installation, launch Jupyter Notebook using: Go to the folder -> open in cmd -> jupyter notebook
+
+Python programs can also be written in a notepad and run from the command prompt. For this, follow the steps:
+
+Open the notepad.
+Write the code in it.
+Save the file with the .py extension.
+Open the terminal/command prompt.
+For type in the following command >> py filename.py.
+The output will be displayed.
