@@ -1,0 +1,253 @@
+Python Inputs: 
+name = input('Enter your Name : ')
+age = int(input('Enter your Age : '))
+print('')
+print('User Name : ', name)
+print('Age : ', age)
+
+Output: 
+User Name :  Sara
+Age :  22
+
+Python Output Operation:
+name = "Manoj"
+age = 20
+address = "Chennai"
+print(f"Name : {name} \nage : {age} \nAddress : {address}")
+
+Output: 
+Name : Manoj 
+age : 20 
+Address : Chennai
+
+Variables:
+The two main types are Global Variables and Local Variables, with an additional special case called Nonlocal Variables.
+1. Global Variables
+Defined outside of all functions or classes.
+Accessible throughout the program (inside and outside functions).
+To modify a global variable inside a function, you must use the global keyword.
+Example:
+# Global variable
+x = 10  
+def modify_global():
+    global x  # Declare that we are using the global variable
+    x = x + 5
+    print("Inside function:", x)
+modify_global()
+print("Outside function:", x)
+Output:
+Inside function: 15
+Outside function: 15
+
+2. Local Variables
+Defined inside a function and accessible only within that function.
+Created when the function starts and destroyed when the function ends.
+They shadow global variables with the same name inside the function.
+Example:
+x = 10  # Global variable
+def local_example():
+    x = 5  # Local variable (shadows global x)
+    print("Inside function:", x)
+local_example()
+print("Outside function:", x)
+Output:
+Inside function: 5
+Outside function: 10
+
+3. Nonlocal Variables (Special Case)
+Used in nested functions to refer to variables from the enclosing function’s scope (not global).
+Declared with the nonlocal keyword.
+Example:
+def outer():
+    y = 10  # Enclosing function variable
+    def inner():
+        nonlocal y
+        y += 5
+        print("Inside inner:", y)
+    inner()
+    print("Inside outer:", y)
+outer()
+Output:
+Inside inner: 15
+Inside outer: 15
+
+Data type:
+Python Takes Everything as Object
+int (integer 0-9)
+float (float 1.2)
+str (string - Sequence of Character)
+bool(Boolean)
+Complex - 2+3i
+list
+tuple
+set
+dictionary
+
+Behavior:
+Mutable and Immutable - (mutable -changable)(immutabe- cannot change)
+ordered and Unordered -(way of storing ordered - 0,1,2,3.. unordered - randomly Stored and keep the list of where it is stored)
+
+Built-in Data Types:
+Python has the following data types built-in by default, in these categories:
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	None
+
+Immutable Core Types:
+Once created, the value of these objects cannot be changed in memory. 
+If you modify them, Python creates a completely new object.
+Integers (int)
+Floats (float)
+Booleans (bool)
+Strings (str)
+Tuples (tuple) ( Collection )
+
+Mutable Core Types: 
+The value of these objects can be changed directly in memory
+without creating a new object.
+Collection
+List (Mutable)
+Set- (Mutable)
+Dictionary-(Mutable)
+
+Keywords: 
+Keywords are special reserved words that are part of the language itself. They define the rules and structure of Python programs which means you cannot use them as names for your variables, functions, classes or any other identifiers.
+
+Category	          Keywords
+Value Keywords        True, False, None
+Operator Keywords	  and, or, not, is, in
+Control Flow Keywords if, else, elif, for, while, break, continue, pass, try, except, finally, raise, assert
+Function and Class	  def, return, lambda, yield, class
+Context Management	  with, as
+Import and Module	  import, from
+Scope and Namespace	  global, nonlocal
+Async Programming	  async, await
+
+Keyword	  Description
+and	      A logical operator
+as	      To create an alias
+assert	  For debugging
+async	  Define an asynchronous function
+await	  Wait for and get a result from an awaitable
+break	  To break out of a loop
+case	  Pattern in a match statement
+class	  To define a class
+continue  To continue to the next iteration of a loop
+def	      To define a function
+del	      To delete an object
+elif	  Used in conditional statements, same as else if
+else	  Used in conditional statements
+except	  Used with exceptions, what to do when an exception occurs
+False	  Boolean value, result of comparison operations
+finally	  Used with exceptions, a block of code that will be executed no matter if there is an exception or not
+for	      To create a for loop
+from	  To import specific parts of a module
+global	  To declare a global variable
+if	      To make a conditional statement
+import	  To import a module
+in	      To check if a value is present in a list, tuple, etc.
+is	      To test if two variables are equal
+lambda	  To create an anonymous function
+match	  Start a match statement (compare a value against cases)
+None	  Represents a null value
+nonlocal  To declare a non-local variable
+not	      A logical operator
+or	      A logical operator
+pass	  A null statement, a statement that will do nothing
+raise	  To raise an exception
+return	  To exit a function and return a value
+True	  Boolean value, result of comparison operations
+try	      To make a try...except statement
+while	  To create a while loop
+with	  Used to simplify exception handling
+yield	  To return a list of values from a generator
+
+String Methods:
+Method	        Description
+capitalize()	Converts the first character to upper case
+casefold()	    Converts string into lower case
+center()	    Returns a centered string
+count()	        Returns the number of times a specified value occurs in a string
+encode()	    Returns an encoded version of the string
+endswith()	    Returns true if the string ends with the specified value
+expandtabs()	Sets the tab size of the string
+find()	        Searches the string for a specified value and returns the position of where it was found
+format()	    Formats specified values in a string
+format_map()	Formats specified values in a string
+index()	        Searches the string for a specified value and returns the position of where it was found
+isalnum()	    Returns True if all characters in the string are alphanumeric
+isalpha()	    Returns True if all characters in the string are in the alphabet
+isascii()	    Returns True if all characters in the string are ascii characters
+isdecimal()	    Returns True if all characters in the string are decimals
+isdigit()	    Returns True if all characters in the string are digits
+isidentifier()	Returns True if the string is an identifier
+islower()	    Returns True if all characters in the string are lower case
+isnumeric()	    Returns True if all characters in the string are numeric
+isprintable()	Returns True if all characters in the string are printable
+isspace()	    Returns True if all characters in the string are whitespaces
+istitle()	    Returns True if the string follows the rules of a title
+isupper()	    Returns True if all characters in the string are upper case
+join()	        Joins the elements of an iterable to the end of the string
+ljust()	        Returns a left justified version of the string
+lower()	        Converts a string into lower case
+lstrip()	    Returns a left trim version of the string
+maketrans()	    Returns a translation table to be used in translations
+partition()	    Returns a tuple where the string is parted into three parts
+replace()	    Returns a string where a specified value is replaced with a specified value
+rfind()	        Searches the string for a specified value and returns the last position of where it was found
+rindex()	    Searches the string for a specified value and returns the last position of where it was found
+rjust()	        Returns a right justified version of the string
+rpartition()	Returns a tuple where the string is parted into three parts
+rsplit()	    Splits the string at the specified separator, and returns a list
+rstrip()	    Returns a right trim version of the string
+split()	        Splits the string at the specified separator, and returns a list
+splitlines()	Splits the string at line breaks and returns a list
+startswith()	Returns true if the string starts with the specified value
+strip()	        Returns a trimmed version of the string
+swapcase()	    Swaps cases, lower case becomes upper case and vice versa
+title()	        Converts the first character of each word to upper case
+translate()	    Returns a translated string
+upper()	        Converts a string into upper case
+zfill()	        Fills the string with a specified number of 0 values at the beginning
+
+Built-in Exceptions:
+Exception	          Description
+ArithmeticError	      Raised when an error occurs in numeric calculations
+AssertionError	      Raised when an assert statement fails
+AttributeError	      Raised when attribute reference or assignment fails
+Exception	          Base class for all exceptions
+EOFError	          Raised when the input() method hits an "end of file" condition (EOF)
+FloatingPointError	  Raised when a floating point calculation fails
+GeneratorExit	      Raised when a generator is closed (with the close() method)
+ImportError	          Raised when an imported module does not exist
+IndentationError	  Raised when indentation is not correct
+IndexError	          Raised when an index of a sequence does not exist
+KeyError	          Raised when a key does not exist in a dictionary
+KeyboardInterrupt	  Raised when the user presses Ctrl+c, Ctrl+z or Delete
+LookupError	          Raised when errors raised cant be found
+MemoryError	          Raised when a program runs out of memory
+NameError	          Raised when a variable does not exist
+NotImplementedError	  Raised when an abstract method requires an inherited class to override the method
+OSError	              Raised when a system related operation causes an error
+OverflowError	      Raised when the result of a numeric calculation is too large
+ReferenceError	      Raised when a weak reference object does not exist
+RuntimeError	      Raised when an error occurs that do not belong to any specific exceptions
+StopIteration	      Raised when the next() method of an iterator has no further values
+SyntaxError	          Raised when a syntax error occurs
+TabError	          Raised when indentation consists of tabs or spaces
+SystemError	          Raised when a system error occurs
+SystemExit	          Raised when the sys.exit() function is called
+TypeError	          Raised when two different types are combined
+UnboundLocalError	  Raised when a local variable is referenced before assignment
+UnicodeError	      Raised when a unicode problem occurs
+UnicodeEncodeError	  Raised when a unicode encoding problem occurs
+UnicodeDecodeError	  Raised when a unicode decoding problem occurs
+UnicodeTranslateError Raised when a unicode translation problem occurs
+ValueError	          Raised when there is a wrong value in a specified data type
+ZeroDivisionError	  Raised when the second operator in a division is zero
